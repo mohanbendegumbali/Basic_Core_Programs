@@ -6,17 +6,19 @@ using System.Threading.Tasks;
 
 namespace BasicCorePrograms
 {
-    public class Power
+    public class Harmonic
     {
-        public void powertable()
+        float sum = 0;
+        
+        public void harmonic()
         {
             Console.WriteLine(" Enter the number ");
             int num = Convert.ToInt32(Console.ReadLine());
-            for (int i = 1; i < num; i++)
+            for (int i = 0; i < num; i++)
             {
-                double p = Math.Pow(2, i);
-                Console.WriteLine(" Power is " + p);
+                this.sum += 1 / i;
             }
+            Console.WriteLine(" Harmonic series is " +sum);
         }
     }
 }
