@@ -10,7 +10,7 @@ namespace Demo
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("1.Flip Coin" + "\n" + "2.Leap Year" + "\n" + "3.Swapping" + "\n" + "4.Largest" + "\n" + "5.Vowels" + "\n" + "6.Power" + "\n" + "7.Harmonic " + "\n" + "8.Prime Factor " + "\n" + "9.Even or Odd");
+                Console.WriteLine("1.Flip Coin" + "\n" + "2.Leap Year" + "\n" + "3.Swapping" + "\n" + "4.Largest" + "\n" + "5.Vowels" + "\n" + "6.Power" + "\n" + "7.Harmonic " + "\n" + "8.Prime Factor " + "\n" + "9.Even or Odd" + "\n" + "10.Quotient and Remainder ");
                 Console.WriteLine(" Enter the option ");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -51,6 +51,11 @@ namespace Demo
                         EvenOdd evenOdd = new EvenOdd();
                         evenOdd.calculate();
                         break;
+                    case 10:
+                        QuotientRemainder QR = new QuotientRemainder();
+                        QR.divide();
+                        break;
+
 
                 }
             }
