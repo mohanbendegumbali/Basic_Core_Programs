@@ -19,6 +19,10 @@ namespace Demo
                         FlipCoin flip = new FlipCoin();
                         flip.Coin();
                         break;
+                    case 2:
+                        LeapYear year = new LeapYear();
+                        year.Leap();
+                        break;
                 }
             }
         }
