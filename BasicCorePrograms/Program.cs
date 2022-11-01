@@ -10,7 +10,7 @@ namespace Demo
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("1.Flip Coin" + "\n" + "2.Leap Year" + "\n" + "3.Swapping" + "\n" + "4.Largest" + "\n" + "5.Vowels" + "\n" + "6.Power" + "\n" + "7.Harmonic ");
+                Console.WriteLine("1.Flip Coin" + "\n" + "2.Leap Year" + "\n" + "3.Swapping" + "\n" + "4.Largest" + "\n" + "5.Vowels" + "\n" + "6.Power" + "\n" + "7.Harmonic " + "\n" + "8.Prime Factor ");
                 Console.WriteLine(" Enter the option ");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -42,6 +42,10 @@ namespace Demo
                     case 7:
                         Harmonic num = new Harmonic();
                         num.harmonic();
+                        break;
+                    case 8:
+                        PrimeFactor primeFactor = new PrimeFactor();
+                        primeFactor.factor();
                         break;
 
                 }
